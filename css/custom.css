@@ -1,57 +1,66 @@
-/*Kelsey's CSS*/
-#bannerPhoto {
-  width: 100%;
-  margin:auto;
+@media (min-width: 768px) {
+	.navbar .navbar-inner {
+	    padding: 0;
+	}
+
+	.navbar .nav {
+	    margin: 0;
+	    padding:0;
+	    display: table;
+	    width: 100%;
+	}
+
+	.navbar .nav li {
+	    display: table-cell;
+	    width: 20%;
+	    float: none;
+	}
+
+	.navbar .nav li a {
+	    font-weight: bold;
+	    text-align: center;
+	    border-left: 1px solid rgba(255, 255, 255, .75);
+	    border-right: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	.navbar .nav li:first-child a {
+	    border-left: 0;
+	    border-radius: 3px 0 0 3px;
+	}
+
+	.navbar .nav li:last-child a {
+	    border-right: 0;
+	    border-radius: 0 3px 3px 0;
+	}
+
+	.navbar-collapse {
+	  /*padding-right: 15px;
+	  padding-left: 15px;*/
+	  padding: 0;
+	  overflow-x: visible;
+	  -webkit-overflow-scrolling: touch;
+	  border-top: 1px solid transparent;
+	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	}
+
+	.collapse {
+  		display: none;
+  		padding:0;
+	}
+
+	.container-fluid {
+	  padding: 0;
+	  margin-right: auto;
+	  margin-left: auto;
+	}
 }
 
-h1 {
-	color: #2e2e1f;
-}
-
-body{
-	background-color: #80ffaa;
-}
-
-/*.navbar-nav {
-    display:table;
-    width:100%;
-    margin: 0;
-}
-.navbar-nav > li {
-    float:none;
-    display:table-cell;
-    text-align:center;
+/*#bannerPhoto{
+	width:100%;
+	margin:auto;
 }*/
 
-.navbar .navbar-inner {
-    padding: 0;
-}
-
-.navbar .nav {
-    margin: 0;
-    display: table;
-    width: 100%;
-}
-
-.navbar .nav li {
-    display: table-cell;
-    width: 1%;
-    float: none;
-}
-
-.navbar .nav li a {
-    font-weight: bold;
-    text-align: center;
-    border-left: 1px solid rgba(255, 255, 255, .75);
-    border-right: 1px solid rgba(0, 0, 0, .1);
-}
-
-.navbar .nav li:first-child a {
-    border-left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.navbar .nav li:last-child a {
-    border-right: 0;
-    border-radius: 0 3px 3px 0;
+body{
+	background:#80ffaa;
 }
