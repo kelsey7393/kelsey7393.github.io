@@ -8,6 +8,8 @@
 	    padding:0;
 	    display: table;
 	    width: 100%;
+	    background-color: white;
+
 	}
 
 	.navbar .nav li {
@@ -21,6 +23,7 @@
 	    text-align: center;
 	    border-left: 1px solid rgba(255, 255, 255, .75);
 	    border-right: 1px solid rgba(0, 0, 0, .1);
+	    color: #00b386;
 	}
 
 	.navbar .nav li:first-child a {
@@ -62,5 +65,21 @@
 }*/
 
 body{
-	background:#80ffaa;
+	/*Darker Background
+	background:#ccffe6;*/
+	background:#e6fff3;
+}
+
+/*Reset navbar colors*/
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: #00b386;
+	color: white;
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+	color: magenta;
 }
