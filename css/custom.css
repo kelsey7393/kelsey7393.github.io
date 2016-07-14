@@ -19,11 +19,9 @@
 	}
 
 	.navbar .nav li a {
-	    font-weight: bold;
 	    text-align: center;
 	    border-left: 1px solid rgba(255, 255, 255, .75);
 	    border-right: 1px solid rgba(0, 0, 0, .1);
-	    color: #00b386;
 	}
 
 	.navbar .nav li:first-child a {
@@ -59,27 +57,39 @@
 	}
 }
 
-/*#bannerPhoto{
+#bannerPhotoDiv{
+	overflow-y:hidden;
+}
+
+#bannerPhotoDiv img{
 	width:100%;
-	margin:auto;
-}*/
+}
 
 body{
-	/*Darker Background
-	background:#ccffe6;*/
 	background:#e6fff3;
 }
 
 /*Reset navbar colors*/
 .navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover{
+.navbar-default .navbar-nav>.active>a:focus{
 	background-color: #00b386;
 	color: white;
 }
 
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
-	color: magenta;
+.navbar-default .navbar-nav>.active>a:hover{
+	color: gray;
+	background-color: #00b386;
+}
+
+.navbar .nav li a:hover{
+	color:gray;
+}
+
+.navbar .nav li a {
+	font-weight: bold;
+	color:#00b386;
+}
+
+.navbar-default .navbar-brand {
+	color: #00b386;
 }
