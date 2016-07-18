@@ -93,3 +93,32 @@ body{
 .navbar-default .navbar-brand {
 	color: #00b386;
 }
+
+h1 {
+	color:#00b386;
+}
+
+table {
+	margin-left:50px;
+	width:100%;
+}
+
+#profilePic img{
+	border:2px gray solid;
+}
+
+#leftColumn {
+	float:left;
+	margin-left:50px;
+	width:50%;
+}
+
+#rightColumn {
+	float:right;
+	margin-right: 50px;
+	width:50%;
+}
+
+#profilePic {
+	margin:auto;
+}
