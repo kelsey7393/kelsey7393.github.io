@@ -69,6 +69,10 @@ body{
 	background:#e6fff3;
 }
 
+.colorTeal {
+	color:#00b386;
+}
+
 /*Reset navbar colors*/
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus{
@@ -156,7 +160,7 @@ div#two {
 #headline {
 	margin-top:40px;
 }
-/*index.html styling for desktop*/
+/*index.html styling for desktop end*/
 
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
@@ -190,5 +194,143 @@ div#two {
 	#headline {
 		margin-top:30px;
 	}
+	/*index.html styling for mobile end*/
+
+	/*resume.html styling for mobile*/
+
+	
 }
-/*index.html styling for mobile*/
+@media (max-width: 559px) {
+	.secondStar {
+		visibility:hidden;
+	}
+}
+/*resume.html styling for mobile end*/
+
+/*Resume styling desktop*/
+h4{
+	color:gray;
+	display:inline;
+}
+
+#contactInfo {
+	clear:both;
+	display:inline;
+}
+
+#contactInfo h4{
+	color:#585858;
+}
+
+.starIcon {
+	margin-bottom:10px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.resumeContent {
+	width:90%;
+	margin:auto;
+}
+
+#objective {
+	
+	margin-top:20px;
+}
+
+#technicalCompetencies {
+	margin-top:15px;
+	margin-bottom:20px;
+}
+
+.sectionHeaderText {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+.sectionHeader {
+	margin-top:10px;
+}
+
+.floatLeft {
+	float:left;
+	width:55%;
+}
+
+.floatRight {
+	float:right;
+	color:#585858;
+	margin-right:0px;
+}
+
+#cumulativeGPA {
+	color:#585858;
+}
+
+.notInline
+{
+	clear:both;
+	display:block;
+}
+
+.twoLineTitle
+{
+	margin-top:-5px;
+}
+
+#amazon
+{
+	margin-top:20px;
+}
+
+#educationHeader
+{
+	margin-top:20px;
+}
+
+#GATitle
+{
+	width:40%;
+}
+
+#GAList li
+{
+	color: #00b386;
+	margin-left:-20px;
+}
+
+#GADescription
+{
+	margin-bottom:5px;
+}
+
+.linkButton
+{
+	margin:auto;
+	width:150px;
+	height:50px;
+	margin-top:50px;
+	background-color: #00b386;
+	border:solid 1px gray;
+	border-radius:10px;
+	text-align:center;
+	line-height: 50px;
+	margin-bottom:50px;
+}
+
+.buttonText
+{
+	display:inline-block;
+	color:white;
+	vertical-align:middle;
+	line-height: normal;
+}
+/*End of Resume styling for desktop*/
