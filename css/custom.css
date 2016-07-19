@@ -204,6 +204,14 @@ div#two {
 	.secondStar {
 		visibility:hidden;
 	}
+
+	
+}
+
+@media (max-width: 565px) {
+	.floatLeft {
+		width:20%;
+	}
 }
 /*resume.html styling for mobile end*/
 
@@ -262,13 +270,16 @@ hr {
 
 .floatLeft {
 	float:left;
-	width:55%;
+	width:50%;
 }
 
 .floatRight {
 	float:right;
 	color:#585858;
 	margin-right:0px;
+	padding-left:20px;
+	width:50%;
+	text-align: right;
 }
 
 #cumulativeGPA {
