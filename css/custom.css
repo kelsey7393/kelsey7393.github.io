@@ -99,100 +99,68 @@ body{
 }
 
 h1 {
-	color:#00b386;
+	/*color:#00b386;*/
+	font-family:inherit;
 }
 
 /*index.html styling for desktop*/
-#profilePic img{
-	border:2px gray solid;
-}
-
-#leftColumn {
-	float:left;
-	margin-left:50px;
-	width:50%;
-	overflow:hidden;
-}
-
-#rightColumn {
-	float:right;
-	margin-right: 50px;
-	width:50%;
-	overflow:hidden;
-}
-
-#profilePic {
-	margin:auto;
-	display: block;
-	margin-top: 30px;
-}
 
 section {
-    width: 90%;
+    width: 100%;
     margin:auto;
     overflow:hidden;
+    display: table-cell;
+	vertical-align:bottom;
+	
+	position:fixed;
+	bottom: 0;
 }
 
-div#one {
-    float: left;
-    width:40%;
-    text-align: center;
-}
-div#two {
-	text-align:center;
-    float:right;
-    display:block;
-    width:60%;
+#homeContent{
+	
 }
 
-#funHeader {
-	margin-top:40px;
+#homeContent h1 {
+	font-size: 50px;
+	margin-left: 40px;
+	width: 50%;
+
 }
 
-#two h1 {
-	font-size: 70px;
-}
-
-#two h2 {
+#homeContent h2 {
 	color:gray;
+	margin-left: 40px;
 }
 
-#headline {
-	margin-top:40px;
+#skyline {
+	width: 100%;
+	z-index: -1;
+	content: url(../img/Skyline.png);
 }
+
 /*index.html styling for desktop end*/
 
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
 
-
-	div#one{
-		text-align:center;
-		margin:auto;
-		float:none;
-		width:100%;
-	}
-	
-	div#two {
-		margin:auto;
-		overflow:hidden;
-		float:none;
-		width:100%;
-	}
 	section {
 		margin:auto;
+		position:fixed;
+		bottom: 0;
+		vertical-align:bottom;
+		display: table-cell;
 	}
 
-	#two h1 {
-	font-size: 50px;
+	#homeContent h1 {
+	font-size: 30px;
 	}
 
-	#profilePic {
-		margin-top:10px;
+	#homeContent h2 {
+	font-size: 20px;
 	}
 
-	#headline {
-		margin-top:30px;
+	#skyline {
+		content: url(../img/SkylineMobile.png);
 	}
 	/*index.html styling for mobile end*/
 
@@ -200,17 +168,27 @@ div#two {
 
 	
 }
-@media (max-width: 559px) {
-	.secondStar {
-		visibility:hidden;
+@media (max-width: 478px) {
+	.starToggle {
+		visibility: collapse;
 	}
-
-	
 }
 
 @media (max-width: 565px) {
 	.floatLeft {
 		width:20%;
+	}
+}
+
+@media (max-width: 448px) {
+	#location {
+		text-align: center;
+	}
+	.starIcon{
+		text-align: center;
+	}
+	#email {
+		text-align: center;
 	}
 }
 /*resume.html styling for mobile end*/
