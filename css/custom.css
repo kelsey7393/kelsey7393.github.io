@@ -1,18 +1,15 @@
 @media (min-width: 768px) {
-	.navbar .navbar-inner {
+	/*.navbar .navbar-inner {
 	    padding: 0;
-	}
+	}*/
 
-	.navbar .nav {
-	    margin: 0;
-	    padding:0;
-	    display: table;
+	.navbar .nav .navbardefault{
 	    width: 100%;
 	    background-color: white;
 
 	}
 
-	.navbar .nav li {
+	/*.navbar .nav li {
 	    display: table-cell;
 	    width: 20%;
 	    float: none;
@@ -35,15 +32,13 @@
 	}
 
 	.navbar-collapse {
-	  /*padding-right: 15px;
-	  padding-left: 15px;*/
 	  padding: 0;
 	  overflow-x: visible;
 	  -webkit-overflow-scrolling: touch;
 	  border-top: 1px solid transparent;
 	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 	          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-	}
+	}*/
 
 	.collapse {
   		display: none;
@@ -57,21 +52,15 @@
 	}
 }
 
-#bannerPhotoDiv{
-	overflow-y:hidden;
 }
 
-#bannerPhotoDiv img{
-	width:100%;
-}
-
-body{
+/*body{
 	background:#e6fff3;
-}
+}*/
 
-.colorTeal {
+/*.colorTeal {
 	color:#00b386;
-}
+}*/
 
 /*Reset navbar colors*/
 .navbar-default .navbar-nav>.active>a,
@@ -81,29 +70,31 @@ body{
 }
 
 .navbar-default .navbar-nav>.active>a:hover{
-	color: gray;
-	background-color: #00b386;
+	color: #fff999;
+	background-color: #ff7295;
 }
 
 .navbar .nav li a:hover{
-	color:gray;
+	color:#fff999;
 }
 
 .navbar .nav li a {
 	font-weight: bold;
-	color:#00b386;
+	color:#ff7295;
 }
 
 .navbar-default .navbar-brand {
-	color: #00b386;
+	color: black;
+	border-color: #fff999;
 }
 
-h1 {
-	/*color:#00b386;*/
+/*h1 {
+	color:#00b386;
 	font-family:inherit;
-}
+}*/
 
 /*index.html styling for desktop*/
+
 
 section {
     width: 100%;
@@ -111,48 +102,33 @@ section {
     overflow:hidden;
     display: table-cell;
 	vertical-align:bottom;
-	
 	position:fixed;
 	bottom: 0;
 }
 
-#homeContent{
-	
-}
-
 #homeContent h1 {
-	font-size: 50px;
-	margin-left: 40px;
-	width: 50%;
-
+	font-size: 150px;
+	font-family: 'CenturyGothic';
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 17%
 }
 
-#homeContent h2 {
-	color:gray;
-	margin-left: 40px;
+#homeContent h1 div span {
+	margin:-20px;
+	padding: 0px;
 }
 
-#skyline {
-	width: 100%;
-	z-index: -1;
-	content: url(../img/Skyline.png);
+#homeContent h1 div {
+	white-space: nowrap;
 }
-
 /*index.html styling for desktop end*/
 
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
 
-	section {
-		margin:auto;
-		position:fixed;
-		bottom: 0;
-		vertical-align:bottom;
-		display: table-cell;
-	}
-
 	#homeContent h1 {
-	font-size: 30px;
+	font-size: 50%;
 	}
 
 	#homeContent h2 {
@@ -301,6 +277,15 @@ hr {
 	margin-bottom:5px;
 }
 
+.buttonText
+{
+	display:inline-block;
+	color:white;
+	vertical-align:middle;
+	line-height: normal;
+}
+/*End of Resume styling for desktop*/
+
 .linkButton
 {
 	margin:auto;
@@ -315,11 +300,21 @@ hr {
 	margin-bottom:50px;
 }
 
-.buttonText
+.portfolioPieceButton
 {
-	display:inline-block;
+	width:150px;
+	height:150px;
+	background-color:#00b386;
+	border:solid 1px gray;
+	border-radius:10px;
+	text-align:center;
+	line-height: 50px;
+	padding:10px;
+}
+
+.ppButtonText
+{
 	color:white;
-	vertical-align:middle;
+	vertical-align:center;
 	line-height: normal;
 }
-/*End of Resume styling for desktop*/
