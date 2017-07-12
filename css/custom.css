@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
-	/*.navbar .navbar-inner {
-	    padding: 0;
-	}*/
+	.navbar .navbar-inner {
+	    background-color: #fff999;
+	}
 
 	.navbar .nav .navbardefault{
 	    width: 100%;
@@ -52,20 +52,10 @@
 	}
 }
 
-}
-
-/*body{
-	background:#e6fff3;
-}*/
-
-/*.colorTeal {
-	color:#00b386;
-}*/
-
 /*Reset navbar colors*/
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus{
-	background-color: #00b386;
+	background-color: #ff7295;
 	color: white;
 }
 
@@ -88,11 +78,6 @@
 	border-color: #fff999;
 }
 
-/*h1 {
-	color:#00b386;
-	font-family:inherit;
-}*/
-
 /*index.html styling for desktop*/
 
 
@@ -106,38 +91,43 @@ section {
 	bottom: 0;
 }
 
-#homeContent h1 {
+.homeContent div div h1 {
 	font-size: 150px;
 	font-family: 'CenturyGothic';
 	text-align: center;
-	vertical-align: middle;
-	margin-top: 17%
 }
 
-#homeContent h1 div span {
+.homeContent div {
+	margin-top: 5%;
+}
+
+.homeContent div div h1 span {
 	margin:-20px;
 	padding: 0px;
 }
 
-#homeContent h1 div {
-	white-space: nowrap;
+@media (min-width: 1200px) {
+	.homeContent div {
+		margin-top: 7%;
+	}
 }
+
+
 /*index.html styling for desktop end*/
+
 
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
 
-	#homeContent h1 {
+	/*.homeContent h1 {
 	font-size: 50%;
 	}
 
-	#homeContent h2 {
+	.homeContent h2 {
 	font-size: 20px;
-	}
+	}*/
 
-	#skyline {
-		content: url(../img/SkylineMobile.png);
-	}
+	
 	/*index.html styling for mobile end*/
 
 	/*resume.html styling for mobile*/
