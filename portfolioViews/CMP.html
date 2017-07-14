@@ -56,18 +56,27 @@
 
      <h1 class="colorPink portfolioPieceLabel">Citi Marketplace</h1>
       <center>
-          <embed src="assets/MarketplaceEmployeeprofiles.pdf" class="pdfDisplayLarge"/>
-          <embed src="assets/MarketplaceEmployeeprofiles.pdf" class="pdfDisplayMedium"/>
-          <embed src="assets/MarketplaceEmployeeprofiles.pdf" class="pdfDisplaySmall"/>
+          <embed class="pdfViewer" src="../assets/MarketplaceEmployeeprofiles.pdf"/>
       </center>
 
-
-      <a class="link" href="../assets/MarketplaceEmployeeprofiles.pdf" target="_blank" >
-        <div class="linkButton">
-          <span class="buttonText"><strong>CMP as PDF</strong></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 leftButton">          
+            <a class="link" href="../assets/MarketplaceEmployeeprofiles.pdf" target="_blank" >
+              <div class="linkButtonCMP linkButtonLeft">
+                <span class="buttonText"><strong>CMP as PDF</strong></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 rightButton">          
+            <a class="link" href="../assets/MarketplaceEmployeeprofiles.bmpr" target="_blank" >
+              <div class="linkButtonCMP linkButtonRight">
+                <span class="buttonText"><strong>CMP as Balsamiq file</strong></span>
+              </div>
+            </a>
+          </div>
         </div>
-      </a>
-
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

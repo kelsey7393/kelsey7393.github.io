@@ -105,7 +105,7 @@
 
 /*index.html styling for desktop*/
 
-.homeContent div div h1 {
+.largeColorfulText div div h1 {
 	font-size: 150px;
 	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
 	
@@ -115,19 +115,23 @@
 }
 
 .kelseyHome h1{
-	margin-right:60px;
+	margin-right:5px;
 }
 
-.homeContent{
+.skaarvaHome h1{
+	margin-left:65px;
+}
+
+.largeColorfulText{
 	margin-top: 30vh;
 }
 
-.homeContent div div h1 span {
-	margin:-20px;
+.largeColorfulText div div h1 span {
+	margin:-23px;
 }
 
 @media (max-width: 1199px) {
-	.homeContent  {
+	.largeColorfulText  {
 		margin-top: 20vh;
 	}
 
@@ -139,8 +143,8 @@
 	text-align: center;
 	}
 
-	.kelseyHome h1 {
-	margin-right:0px;
+	.skaarvaHome h1 {
+	margin-left:0px;
 	}
 }
 /*index.html styling for desktop end*/
@@ -148,11 +152,11 @@
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
 	
-	.homeContent div div h1 {
+	.largeColorfulText div div h1 {
 		font-size: 20vw;
 	}
 
-	.homeContent div div h1 span {
+	.largeColorfulText div div h1 span {
 		margin:-2.6vw;
 	}
 }
@@ -362,129 +366,246 @@ hr {
 	margin-left: 20px;
 }
 
-.pdfDisplayLarge{
-	width:870px;
-	height:700px;
+.pdfViewer{
+	border-color:#bcffcf;
+	border-style: solid;
+	border-width: 2px;
 }
 
-.pdfDisplayMedium{
-	width:500px;
-	height:700px;
-}
-
-.pdfDisplaySmall{
-	width:300px;
-	height:700px;
-}
-/*small display*/
-@media(max-width:600px){
-	.pdfDisplayLarge{
-		display:none;
-	}
-	.pdfDisplayMedium{
-		display:none;
+@media(min-width:950px){
+	.pdfViewer
+	{
+		width: 879px;
+		height: 700px;
 	}
 }
 
-/*medium display*/
-@media (min-width: 601px) and (max-width:949px) {
-	.pdfDisplayLarge{
-		display:none;
-	}
-	.pdfDisplaySmall{
-		display:none;
+@media(max-width:949px) and (min-width:600px){
+	.pdfViewer
+	{
+		width: 500px;
+		height: 700px;
 	}
 }
 
-/*large display*/
-@media (min-width: 950px){
-	.pdfDisplayMedium{
-		display:none;
+@media(max-width:599px){
+	.pdfViewer
+	{
+		width: 300px;
+		height: 700px;
 	}
-	.pdfDisplaySmall{
+}
+
+@media(max-width: 949px){
+	.desktop{
 		display:none;
 	}
 }
 
-/* Iphone Height*/
-@media(max-height: 667px){
-	.pdfDisplaySmall{
-		height:450px;
+@media(min-width: 950px){
+	.mobile{
+		display: none;
 	}
 }
-.pdfContainer{
-	position:relative;/*
-	height:100%;
-	overflow:hidden;*/
+
+/*CMP*/
+@media(min-width:768px){
+	.linkButtonLeft {
+		float:right;
+	}
+
+	.linkButtonRight{
+		float:left;
+	}
 }
 
-/*.pdfContainer-16x9 {
-  padding-bottom: 56.25%;
-}
- 
- 4x3 Aspect Ratio 
-.pdfContainer-4x3 {
-  padding-bottom: 75%;
-}
-*/
-/*.pdf{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}*/
-
-/*.pdfContainer {
-	margin-left: 23%;
-	position: relative;
-	padding-bottom: 90%;
-	padding-top: 30px;
-	height: 0;
-	overflow:hidden;
-}
- 
-.pdfContainer iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 70%;
-	height: 100%;
-
-}*/
-
-.content {
-   width: 75%;
-   margin: 0px auto;
+.linkButtonCMP
+{
+	margin:auto;
+	width:160px;
+	height:50px;
+	margin-top:25px;
+	background-color: #ff7295;
+	border-radius:10px;
+	text-align:center;
+	line-height: 50px;
+	margin-bottom:25px;
 }
 
-.embed-container {
-   height: 0;
-   width: 100%;
-   padding-bottom: 75%; /* play with this until right */
-   overflow: hidden;
-   position: relative;
+/*Velocity Styling */
+.portfolioInfo
+{
+	margin-left: 20px;
+	margin-top:-7px;
 }
 
-.embed-container iframe {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
+.velocityBefore
+{
+	margin-bottom:50px;
+	margin-left:20px;
+	border-color:#ff7295;
+	border-style: solid;
+	border-width: 2px;
+	max-width:100%;
+	max-height:100%;
+
 }
+
+.velocityAfter
+{
+	margin-bottom:20px;
+	margin-left:20px;
+	border-color:#ff7295;
+	border-style: solid;
+	border-width: 2px;
+	max-width:100%;
+	max-height:100%;
+}
+.beforeAfter
+{
+	margin-left:20px;
+}
+.after
+{
+	margin-left:0px;
+	float:left;
+}
+
+.changes
+{
+	display:inline-block;
+	margin-bottom:30px;
+	vertical-align: top;
+	width:95%;
+}
+.changes h3
+{
+	margin-top:0px;
+	margin-left:20px;
+}
+
+@media(min-width:1184px){
+	.changes{
+		width:35%;
+	}
+}
+
+@media(max-width: 629px){
+	.velocityBefore
+	{
+		margin-left:0px;
+	}
+
+	.velocityAfter
+	{
+		margin-left:0px;
+	}
+}
+
 
 /*Portfolio Styling end*/
 
 /*hobbies styling*/
-.soon{
-	text-align: left;
-	margin-left:-50px;
-
+.coming
+{
+	text-align: right;
 }
 
-.coming{
-	margin-left:20px;
+.coming h1
+{
+	margin-right:40px;
+}
 
+.soon h1
+{
+	margin-left:40px;
+}
+
+@media (max-width: 1199px) {
+	.comingSoon  {
+		margin-top: 20vh;
+	}
+
+	.coming {
+		text-align: center;
+	}
+
+	.soon {
+		text-align: center;
+	}
+
+	.coming h1 {
+		margin-right:0px;
+	}
+
+	.soon h1 {
+		margin-left:0px;
+	}
 }
 /*end hobbies styling*/
+
+/*Contact me styling*/
+.kelseyContact h1 
+{
+	display:inline;
+}
+
+.kelseyContact h1 span
+{
+	margin-right:-10px;
+}
+
+.kelseyContact{
+	margin-right:20px;
+	margin-left:30px;
+}
+
+.skaarvaContact h1 span
+{
+	margin-right:-10px;
+}
+
+.skaarvaContact h1
+{
+	display:inline;
+}
+
+.nameContact
+{
+	margin-top:40px;
+}
+
+.firstInfoBlock
+{
+	margin-top:40px;
+}
+.infoBlock{
+	margin-top:10px;
+}
+
+.contactLabel
+{
+	margin-left:30px;
+	display:inline;
+}
+
+.info{
+	display:inline;
+}
+
+@media (max-width:399px){
+	.contactLabel
+	{
+		display:block;
+		margin-bottom: 0px;
+	}
+
+	.info{
+		margin-left:30px;
+		margin-top:0px;
+		display:block;
+	}
+}
+
+
+/*End Contact me styling*/
