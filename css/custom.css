@@ -1,5 +1,15 @@
 @import url("colors.css");
 
+@font-face {
+    font-family: 'CenturyGothicRegular';
+    src: url('911Fonts_com_CenturyGothicRegular_911fonts_comfontsmhpY.eot');
+    src: url('911Fonts_com_CenturyGothicRegular_911fonts_comfontsmhpY.eot?#iefix') format('embedded-opentype'),
+         url('911Fonts_com_CenturyGothicRegular_911fonts_comfontsmhpY.woff') format('woff'),
+         url('911Fonts_com_CenturyGothicRegular_911fonts_comfontsmhpY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
 @media (max-width: 767px) {
 	.navbar-header 
 	{
@@ -97,7 +107,7 @@
 
 .homeContent div div h1 {
 	font-size: 150px;
-	font-family: 'CenturyGothic';
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
 	
 }
 .kelseyHome{
