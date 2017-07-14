@@ -1,48 +1,47 @@
+@import url("colors.css");
+
+@media (max-width: 767px) {
+	.navbar-header 
+	{
+	    background-color: #ff7295;
+	    color:#fff999;
+	}
+
+	.navbar-default .navbar-brand{
+		color:#fff999;
+	}
+
+	.navbar-default .navbar-brand:hover
+	{
+		color:white;
+	}
+
+	.navbar-default .navbar-brand:focus
+	{
+		color:#fff999;
+	}
+
+	.navbar-default .navbar-brand.active:hover
+	{
+		color:white;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar 
+	{
+		background-color: #fff999;
+	}
+
+	.navbar-default .navbar-toggle
+	{
+		border-color: #fff999;
+	}
+}
+
+/*Spacing of nav bar for lg screens*/
 @media (min-width: 768px) {
-	.navbar .navbar-inner {
-	    background-color: #fff999;
-	}
-
-	.navbar .nav .navbardefault{
-	    width: 100%;
-	    background-color: white;
-
-	}
-
-	/*.navbar .nav li {
-	    display: table-cell;
-	    width: 20%;
-	    float: none;
-	}
-
-	.navbar .nav li a {
-	    text-align: center;
-	    border-left: 1px solid rgba(255, 255, 255, .75);
-	    border-right: 1px solid rgba(0, 0, 0, .1);
-	}
-
-	.navbar .nav li:first-child a {
-	    border-left: 0;
-	    border-radius: 3px 0 0 3px;
-	}
-
-	.navbar .nav li:last-child a {
-	    border-right: 0;
-	    border-radius: 0 3px 3px 0;
-	}
-
-	.navbar-collapse {
-	  padding: 0;
-	  overflow-x: visible;
-	  -webkit-overflow-scrolling: touch;
-	  border-top: 1px solid transparent;
-	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-	          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-	}*/
-
 	.collapse {
-  		display: none;
-  		padding:0;
+		display: none;
+		padding:0;
 	}
 
 	.container-fluid {
@@ -50,18 +49,37 @@
 	  margin-right: auto;
 	  margin-left: auto;
 	}
+
+	.navbar-right{
+		margin-right:0px;
+	}
+}
+
+.skaarvaBrand{
+	margin-left:10px;
+}
+
+.nameBrand span span{
+	margin:-1.5px;
+}
+
+
+.navbar-collapse{
+	background-color: #ff7295;
 }
 
 /*Reset navbar colors*/
+/*Selected menu item settings*/
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus{
-	background-color: #ff7295;
-	color: white;
+	background-color: #fff999;
+	color: #ff7295;
 }
 
+/*Selected menu item hover settings*/
 .navbar-default .navbar-nav>.active>a:hover{
-	color: #fff999;
-	background-color: #ff7295;
+	color: #c5bfff;
+	background-color: #fff999;
 }
 
 .navbar .nav li a:hover{
@@ -70,91 +88,97 @@
 
 .navbar .nav li a {
 	font-weight: bold;
-	color:#ff7295;
+	color:white;
 }
 
-.navbar-default .navbar-brand {
-	color: black;
-	border-color: #fff999;
-}
+
 
 /*index.html styling for desktop*/
-
-
-section {
-    width: 100%;
-    margin:auto;
-    overflow:hidden;
-    display: table-cell;
-	vertical-align:bottom;
-	position:fixed;
-	bottom: 0;
-}
 
 .homeContent div div h1 {
 	font-size: 150px;
 	font-family: 'CenturyGothic';
-	text-align: center;
+	
+}
+.kelseyHome{
+	text-align: right;
 }
 
-.homeContent div {
-	margin-top: 5%;
+.kelseyHome h1{
+	margin-right:60px;
+}
+
+.homeContent{
+	margin-top: 30vh;
 }
 
 .homeContent div div h1 span {
 	margin:-20px;
-	padding: 0px;
 }
 
-@media (min-width: 1200px) {
-	.homeContent div {
-		margin-top: 7%;
+@media (max-width: 1199px) {
+	.homeContent  {
+		margin-top: 20vh;
+	}
+
+	.kelseyHome {
+		text-align: center;
+	}
+
+	.skaarvaHome {
+	text-align: center;
+	}
+
+	.kelseyHome h1 {
+	margin-right:0px;
 	}
 }
-
-
 /*index.html styling for desktop end*/
-
 
 /*index.html styling for mobile*/
 @media (max-width: 767px) {
-
-	/*.homeContent h1 {
-	font-size: 50%;
+	
+	.homeContent div div h1 {
+		font-size: 20vw;
 	}
 
-	.homeContent h2 {
-	font-size: 20px;
-	}*/
-
-	
-	/*index.html styling for mobile end*/
-
-	/*resume.html styling for mobile*/
-
-	
-}
-@media (max-width: 478px) {
-	.starToggle {
-		visibility: collapse;
+	.homeContent div div h1 span {
+		margin:-2.6vw;
 	}
 }
+/*Index styling for mobile end*/
 
+/*Mobile Resume styling*/
 @media (max-width: 565px) {
 	.floatLeft {
 		width:20%;
 	}
 }
 
-@media (max-width: 448px) {
+/*mobile header*/
+@media (max-width: 599px) {
 	#location {
-		text-align: center;
+		white-space: nowrap;
 	}
-	.starIcon{
-		text-align: center;
-	}
+
 	#email {
-		text-align: center;
+		display:block;
+		margin-top:0px;
+	}
+
+	.starToggle {
+		display: block;
+	}
+}
+
+/*very tiny screen header*/
+@media (max-width: 238px) {
+	.starIcon{
+		display:none;
+	}
+
+	#email {
+		margin-top:10px;
 	}
 }
 /*resume.html styling for mobile end*/
@@ -165,10 +189,6 @@ h4{
 	display:inline;
 }
 
-#contactInfo {
-	clear:both;
-	display:inline;
-}
 
 #contactInfo h4{
 	color:#585858;
@@ -258,8 +278,8 @@ hr {
 
 #GAList li
 {
-	color: #00b386;
 	margin-left:-20px;
+	color:#ff7295;
 }
 
 #GADescription
@@ -269,42 +289,192 @@ hr {
 
 .buttonText
 {
-	display:inline-block;
-	color:white;
-	vertical-align:middle;
-	line-height: normal;
+	color:#fff999;
 }
-/*End of Resume styling for desktop*/
 
 .linkButton
 {
 	margin:auto;
 	width:150px;
 	height:50px;
-	margin-top:50px;
-	background-color: #00b386;
-	border:solid 1px gray;
+	margin-top:25px;
+	background-color: #ff7295;
 	border-radius:10px;
 	text-align:center;
 	line-height: 50px;
-	margin-bottom:50px;
+	margin-bottom:25px;
+}
+/*End of Resume styling for desktop*/
+.link
+{
+	text-decoration: none !important;
 }
 
-.portfolioPieceButton
+/*Portfolio styling*/
+.portfolioContent
 {
-	width:150px;
-	height:150px;
-	background-color:#00b386;
-	border:solid 1px gray;
-	border-radius:10px;
-	text-align:center;
-	line-height: 50px;
-	padding:10px;
+	margin-top: 5%;
 }
 
-.ppButtonText
+.portfolioPiece 
 {
-	color:white;
-	vertical-align:center;
-	line-height: normal;
+	margin-top:15px;
+	margin-bottom:15px;
 }
+
+.portfolioPieceLink
+{
+	text-decoration: none !important;
+}
+
+.portfolioPieceIcon
+{
+	border-color: #ff7295;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 100%;
+}
+
+/*Portfolo page spacing for mobile*/
+@media(max-width: 767px) {
+	.portfolioPieceIcon{
+		margin-bottom:-12px;
+	}
+
+	.portfolioPiece
+	{
+		margin-bottom:50px;
+	}
+}
+
+.portfolioPieceLabel
+{
+	margin-left: 20px;
+}
+
+.pdfDisplayLarge{
+	width:870px;
+	height:700px;
+}
+
+.pdfDisplayMedium{
+	width:500px;
+	height:700px;
+}
+
+.pdfDisplaySmall{
+	width:300px;
+	height:700px;
+}
+/*small display*/
+@media(max-width:600px){
+	.pdfDisplayLarge{
+		display:none;
+	}
+	.pdfDisplayMedium{
+		display:none;
+	}
+}
+
+/*medium display*/
+@media (min-width: 601px) and (max-width:949px) {
+	.pdfDisplayLarge{
+		display:none;
+	}
+	.pdfDisplaySmall{
+		display:none;
+	}
+}
+
+/*large display*/
+@media (min-width: 950px){
+	.pdfDisplayMedium{
+		display:none;
+	}
+	.pdfDisplaySmall{
+		display:none;
+	}
+}
+
+/* Iphone Height*/
+@media(max-height: 667px){
+	.pdfDisplaySmall{
+		height:450px;
+	}
+}
+.pdfContainer{
+	position:relative;/*
+	height:100%;
+	overflow:hidden;*/
+}
+
+/*.pdfContainer-16x9 {
+  padding-bottom: 56.25%;
+}
+ 
+ 4x3 Aspect Ratio 
+.pdfContainer-4x3 {
+  padding-bottom: 75%;
+}
+*/
+/*.pdf{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}*/
+
+/*.pdfContainer {
+	margin-left: 23%;
+	position: relative;
+	padding-bottom: 90%;
+	padding-top: 30px;
+	height: 0;
+	overflow:hidden;
+}
+ 
+.pdfContainer iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+
+}*/
+
+.content {
+   width: 75%;
+   margin: 0px auto;
+}
+
+.embed-container {
+   height: 0;
+   width: 100%;
+   padding-bottom: 75%; /* play with this until right */
+   overflow: hidden;
+   position: relative;
+}
+
+.embed-container iframe {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+/*Portfolio Styling end*/
+
+/*hobbies styling*/
+.soon{
+	text-align: left;
+	margin-left:-50px;
+
+}
+
+.coming{
+	margin-left:20px;
+
+}
+/*end hobbies styling*/
