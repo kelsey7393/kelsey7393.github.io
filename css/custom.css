@@ -607,5 +607,21 @@ hr {
 	}
 }
 
+.control-label{
+	text-align: left !important;
+	margin-left:20px;
+}
+
+.form-control{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.contactHeader{
+	margin-left:20px;
+	margin-top:50px;
+	margin-bottom: 30px;
+}
+
 
 /*End Contact me styling*/

@@ -52,7 +52,7 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-      <div class="nameContact">
+      <!-- <div class="nameContact">
         <span class="kelseyContact">
           <h1>
             <span class="colorPink">K</span>
@@ -86,7 +86,45 @@
       <div class="infoBlock">
         <h3 class="colorPink contactLabel">Location: </h3>
         <h3 class="info colorPurple">Brooklyn, NY</h3>
-      </div>
+      </div> -->
+      <h1 class="contactHeader colorPurple">Want to get in touch?</h1>
+      <form role="form" action="contact_process.php" method="post">
+        <div class="form-group">
+          <label for="contact_name" class="col-sm-1 control-label">
+            Name:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="contact_name" placeholder="First & Last Name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact_email" class="col-sm-1 control-label">
+            Email:
+          </label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="contact_email" placeholder="JohnDoe@domain.com"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact_location" class="col-sm-1 control-label">
+            Location:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="contact_location" placeholder="Brooklyn, NY"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact_message" class="col-sm-1 control-label">
+            Message:
+          </label>
+          <div class="col-sm-10">
+            <textarea rows="13" class="form-control" id="contact_message"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-prmary" id="submit">Send</button>
+      </form>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
