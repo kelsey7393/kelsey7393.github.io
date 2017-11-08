@@ -6,7 +6,7 @@
 		<link href="../css/custom.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body>
+	<body class="bodyText">
 
     <!--collapsible nav-->
      <!-- Static navbar -->
@@ -54,13 +54,21 @@
         </div><!--/.container-fluid -->
       </nav>
       <h1 class="colorPink portfolioPieceLabel">Velocity</h1>
-        <h1 class="colorPurple beforeAfter">Before</h1>
-        <h3 class="colorPurple portfolioInfo">Given the below design image</h3>
-        <img class="velocityBefore" src="../img/ProximityLevels1.png"/>
-        <h1 class="colorPurple beforeAfter">After</h1>
-        <h3 class="colorPurple portfolioInfo">Implimented design in WPF</h3>
-        <img class="velocityAfter" src="../img/ImplimentedPrefScreen.png"/>
-        <span class="changes">
+        <div class="col-sm-6">
+          <h2 class="colorPurple beforeAfter">Before</h2>
+          <h3 class="colorPurple portfolioInfo">Given the below design image</h3>
+          <a href="../img/ProximityLevels1.png" data-toggle="tooltip" title="Click to enlarge">
+            <img class="velocityBefore" src="../img/ProximityLevels1.png"/>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <h1 class="colorPurple beforeAfter">After</h1>
+          <h3 class="colorPurple portfolioInfo">Implimented design in WPF</h3>
+          <a href="../img/ImplimentedPrefScreen.png" data-toggle="tooltip" title="Click to enlarge">
+            <img class="velocityAfter" src="../img/ImplimentedPrefScreen.png"/>
+          </a>
+        </div>
+        <div class="changes col-sm-12">
           <h3 class="colorPurple">Changes in implimented design</h3>
           <ul id="changeList">
             <li class="colorPink"><h4 class="colorPurple">Increased screen width to make room for numeric values that would not fit in the Banding grid otherwise</h4></li>
@@ -68,10 +76,12 @@
             <li class="colorPink"><h4 class="colorPurple">Added Save button so user doesn't have to X out in order to save changes which may be disconcerning</h4></li>
             <li class="colorPink"><h4 class="colorPurple">Added extra room to the right of the banding grid to allow space for a scroll bar to appear when more than 4 rows are added</h4></li>
           </ul>
-        </span>
+        </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--popper.js-->
+    <script src="https://unpkg.com/popper.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
 	</body>

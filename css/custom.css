@@ -1,5 +1,6 @@
 @import url("colors.css");
 
+
 @font-face {
     font-family: 'CenturyGothicRegular';
     src: url('911Fonts_com_CenturyGothicRegular_911fonts_comfontsmhpY.eot');
@@ -9,7 +10,7 @@
     font-weight: normal;
     font-style: normal;    
 }
-
+/*Hamburger Nav bar*/
 @media (max-width: 767px) {
 	.navbar-header 
 	{
@@ -45,6 +46,14 @@
 	{
 		border-color: #fff999;
 	}
+
+	/*dropdown settings for hamburger menu*/
+	.dropdown-menu
+	{
+		z-index: 0;
+		position:relative;
+		float:none;
+	}
 }
 
 /*Spacing of nav bar for lg screens*/
@@ -63,6 +72,20 @@
 	.navbar-right{
 		margin-right:0px;
 	}
+
+	.dropdown-toggle
+	{
+		color:#ff7295 !important;
+	}
+
+	.newPageMenuItem
+	{
+		color:#ff7295 !important;
+	}
+}
+
+.navbar{
+	margin-bottom:0px;
 }
 
 .skaarvaBrand{
@@ -72,7 +95,6 @@
 .nameBrand span span{
 	margin:-1.5px;
 }
-
 
 .navbar-collapse{
 	background-color: #ff7295;
@@ -101,10 +123,24 @@
 	color:white;
 }
 
+.dropdown-menu {
+	background:#fff999;
+	padding:0px;
+}
 
+body,html{
+    height: 100%;
+  }
+
+body{
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif !important;
+}
+
+.bodyText{
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
+}
 
 /*index.html styling for desktop*/
-
 .largeColorfulText div div h1 {
 	font-size: 150px;
 	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
@@ -334,6 +370,8 @@ hr {
 {
 	margin-top:15px;
 	margin-bottom:15px;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 .portfolioPieceLink
@@ -363,7 +401,7 @@ hr {
 
 .portfolioPieceLabel
 {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .pdfViewer{
@@ -441,26 +479,24 @@ hr {
 
 .velocityBefore
 {
-	margin-bottom:50px;
 	margin-left:20px;
 	border-color:#ff7295;
 	border-style: solid;
 	border-width: 2px;
-	max-width:100%;
-	max-height:100%;
-
+	width:50%;
+	height:50%;
 }
 
 .velocityAfter
 {
-	margin-bottom:20px;
 	margin-left:20px;
 	border-color:#ff7295;
 	border-style: solid;
 	border-width: 2px;
-	max-width:100%;
-	max-height:100%;
+	width:70%;
+	height:70%;
 }
+
 .beforeAfter
 {
 	margin-left:20px;
@@ -473,21 +509,12 @@ hr {
 
 .changes
 {
-	display:inline-block;
-	margin-bottom:30px;
-	vertical-align: top;
-	width:95%;
-}
-.changes h3
-{
-	margin-top:0px;
-	margin-left:20px;
+	margin-bottom:20px;
 }
 
-@media(min-width:1184px){
-	.changes{
-		width:35%;
-	}
+.changes h3
+{
+	margin-left:20px;
 }
 
 @media(max-width: 629px){
@@ -499,6 +526,33 @@ hr {
 	.velocityAfter
 	{
 		margin-left:0px;
+	}
+
+	.beforeAfter
+	{
+		margin-left:0px;
+	}
+
+	.portfolioInfo
+	{
+		margin-left: 0px;
+		font-size: 20px;
+	}
+
+	.portfolioPieceLabel
+	{
+		margin-left: 10px;
+	}
+
+	.changes h3
+	{
+		margin-left:0px;
+		font-size: 20px;
+	}
+
+	#changeList
+	{
+		margin-left: -17px;
 	}
 }
 
@@ -542,6 +596,67 @@ hr {
 		margin-left:0px;
 	}
 }
+/*Side Nav*/
+button.accordion {
+    background-color: #fffbcc;
+    color: #ff7295;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.activeAccordionButton
+{
+	background-color:#ff7295 !important;
+	color:#fff999 !important;
+}
+
+button.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #fffbcc;
+    margin-bottom: 0px;
+}
+
+.sidenavWrapper {
+	height:100%;
+	padding-left: 0px;
+}
+
+.sidenav {
+	height:100%;
+	background:#fffbcc;
+	padding-right: 0px;
+}
+.panel{
+	margin-top:10px;
+}
+
+.panel p
+{
+	color:gray;
+}
+
+.panel p a
+{
+	color:gray;
+	text-decoration: none;
+}
+
+.panel p a:hover
+{
+	color:#c5bfff;
+}
+/*End Side Nav*/
 /*end hobbies styling*/
 
 /*Contact me styling*/
@@ -609,18 +724,27 @@ hr {
 
 .control-label{
 	text-align: left !important;
-	margin-left:20px;
+	margin-bottom:10px;
+	padding-left:20px;
 }
 
 .form-control{
-	margin-left:20px;
-	margin-right:20px;
+	margin-bottom:10px;
 }
 
 .contactHeader{
 	margin-left:20px;
-	margin-top:50px;
+	margin-top:30px;
 	margin-bottom: 30px;
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
+}
+
+.sendButton
+{
+	display:block;
+	float:right;
+	margin-right:20px;
+	margin-bottom:20px;
 }
 
 
