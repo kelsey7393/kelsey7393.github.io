@@ -88,6 +88,10 @@
 	margin-bottom:0px;
 }
 
+.navbar{
+	margin-bottom:0px;
+}
+
 .skaarvaBrand{
 	margin-left:10px;
 }
@@ -128,9 +132,139 @@
 	padding:0px;
 }
 
+/*.dropdown-submenu>a{
+	color:#ff7295 !important;
+	background-color: #fffbcc;
+}*/
+
+/*.newPageMenuItem
+{
+	color:#ff7295 !important;
+}*/
+
+/*.dropdown-submenu:hover{
+	background-color:#fffbcc;
+}
+
+.dropdown-submenu a:hover{
+	color:#c5bfff;
+	
+}*/
+
 body,html{
     height: 100%;
   }
+
+body{
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif !important;
+}
+
+.bodyText{
+	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif;
+}
+
+/*.marginBottom-0 
+{
+	margin-bottom:0;
+}
+
+.dropdown-submenu {
+	position:relative;
+}
+
+.dropdown-submenu>.dropdown-menu 
+{
+	top:0;
+	left:100%;
+	margin-top:0px;
+	margin-left:-1px;
+	-webkit-border-radius:0 6px 6px 6px;
+	-moz-border-radius:0 6px 6px 6px;
+	border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu>a:after
+{
+	display:block;
+	content:" ";
+	float:right;
+	width:0;
+	height:0;
+	border-color:transparent;
+	border-style:solid;
+	border-width:5px 0 5px 5px;
+	margin-top:5px;
+	margin-right:-10px;
+	border-left-color:#ff7295;
+}
+
+.dropdown-submenu:hover>a:after
+{
+	border-left-color:#555;
+}
+
+.dropdown-submenu.pull-left
+{
+	float:none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu
+{
+	left:-100%;
+	margin-left:10px;
+	-webkit-border-radius:6px 0 6px 6px;
+	-moz-border-radius:6px 0 6px 6px;
+	border-radius:6px 0 6px 6px;
+}*/
+
+
+/*Side Nav*/
+button.accordion {
+    background-color: #fffbcc;
+    color: #ff7295;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.activeAccordionButton
+{
+	background-color:#fff999 !important;
+}
+
+button.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #fffbcc;
+    margin-bottom: 0px;
+}
+
+.sidenavWrapper {
+	height:100%;
+	padding-left: 0px;
+}
+
+.sidenav {
+	height:100%;
+	background:#fffbcc;
+	padding-right: 0px;
+}
+
+.panel p
+{
+	color:gray;
+}
+/*End Side Nav*/
+>>>>>>> 72257c7d77c79a647291afefe7a8f41b9600e09a
 
 body{
 	font-family: "Century Gothic", "CenturyGothicRegular", Verdana, Tahoma, Helvetica, sans-serif !important;
