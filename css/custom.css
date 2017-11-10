@@ -495,12 +495,12 @@ hr {
 }
 
 /*Portfolio styling*/
-.portfolioContent
+.circleIconContainer
 {
 	margin-top: 5%;
 }
 
-.portfolioPiece 
+.iconColumn
 {
 	margin-top:15px;
 	margin-bottom:15px;
@@ -508,12 +508,12 @@ hr {
 	padding-right:15px;
 }
 
-.portfolioPieceLink
+.circleIconLink
 {
 	text-decoration: none !important;
 }
 
-.portfolioPieceIcon
+.circleIcon
 {
 	border-color: #ff7295;
 	border-width: 2px;
@@ -523,20 +523,20 @@ hr {
 
 /*Portfolo page spacing for mobile*/
 @media(max-width: 767px) {
-	.portfolioPieceIcon{
+	.circleIcon{
 		margin-bottom:-12px;
 	}
 
-	.portfolioPiece
+	.iconColumn
 	{
 		margin-bottom:50px;
 	}
 }
 
-.portfolioPieceLabel
+/*.circleIConLabel
 {
 	margin-left: 30px;
-}
+}*/
 
 .pdfViewer{
 	border-color:#bcffcf;
